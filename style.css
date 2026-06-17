@@ -92,6 +92,7 @@ body {
     color: #AFAFAF;
     padding: 0 250px;
     margin: 25px 0;
+    font-size: 26px;
 }
 
 .btn-1 {
@@ -109,6 +110,21 @@ body {
 
 .btn-1:hover {
     background-color: #b4323d;
-    color: #FFFFFF;
-    transition: 0.3s;
+}
+
+.header-dir {
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px
+}
+
+.dir h3 {
+    font-size: 18px;
+}
+
+.dir p {
+    font-size: 22px;
+    color:#FFFFFF;
+    text-transform: uppercase;
 }
