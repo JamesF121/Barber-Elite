@@ -1,19 +1,23 @@
-body {  
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    background-color: #1F1F1F;
 }
 
-.Container {
+body{
+    background-color: #1F1F1F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.header {
+.header{
     background-image: url('images/bg.jpg');
     background-position: center top;
     background-repeat: no-repeat;
@@ -23,7 +27,7 @@ body {
     align-items: center;
 }
 
-.menu {
+.menu{
     position: absolute;
     top: 0;
     left: 0;
@@ -34,8 +38,8 @@ body {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 24px;
+.logo{
+    font-size: 32px;
     color: #CF2D3A;
     font-weight: 800;
     text-transform: uppercase;
@@ -43,122 +47,367 @@ body {
 
 .menu .navbar ul li{
     position: relative;
-    float:left;
+    float: left;
 }
 
-.menu .navbar ul li a {
+.menu .navbar ul li a{
     font-size: 18px;
     padding: 20px;
     color: #FFFFFF;
     display: block;
 }
 
-.menu .navbar ul li a :hover{
-    color: #CF2D3A; 
+.menu .navbar ul li a:hover{
+    color: #CF2D3A;
 }
 
-#menu {
+#menu{
     display: none;
 }
 
-.menu-icono {
-   width: 25px;
+.menu-icono{
+    width: 25px;
 }
 
-.menu label {
+.menu label{
     cursor: pointer;
     display: none;
 }
 
-.header-txt {
+.header-content{
+    width: 100%;
+}
+
+.header-txt{
     text-align: center;
     margin-bottom: 45px;
 }
 
-.header-txt h1, span, h3 {
+.header-txt h1{
     font-size: 110px;
     letter-spacing: 5px;
     text-transform: uppercase;
     font-family: "Bebas Neue", sans-serif;
     color: #CF2D3A;
-    margin-bottom: 15px;  
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
 }
 
-.header-txt span {
+.header-txt span{
     font-size: 25px;
-    color:#CF2D3A
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 20px;
 }
 
-.header-txt p {
-    color: #AFAFAF;
+.header-txt p{
+    color: #FFFFFF;
     padding: 0 250px;
     margin: 25px 0;
-    font-size: 32px;
+    font-size: 26px;
 }
 
-.btn-1 {
+.btn-1{
     display: inline-block;
     padding: 15px 35px;
     background-color: #D82E37;
     color: #FFFFFF;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Bebas Neue", sans-serif;
-    margin: 25px 0;
     border: 0;
+    border-radius: 5px;
 }
 
-.btn-1:hover {
+.btn-1:hover{
     background-color: #b4323d;
 }
 
-.header-dir {
-    display:flex;
+.header-dir{
+    display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
-.dir h3 {
-    font-size: 18px;
+.dir h3{
+    font-size: 20px;
+    color: #CF2D3A;
 }
 
-.dir p {
-    font-size: 28px;
-    color:#FFFFFF;
+.dir p{
+    font-size: 24px;
+    color: #FFFFFF;
     text-transform: uppercase;
 }
 
-.welcome {
-    display:flex;
+/* WELCOME */
+
+.welcome{
+    display: flex;
 }
 
-.welcome-1 {
-    background-image: url(images/a1.jpg);
+.welcome-1{
+    width: 50%;
+    background-image: url('images/b1.jpg');
     background-position: center center;
-    backgraund-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
+    min-height: 500px;
 }
 
-.welcome-2 {
+.welcome-2{
     width: 50%;
-    padding: 150px  250px 150px 100px;
+    padding: 150px 100px;
     background-color: #191919;
 }
 
-h2 {
-    font-size: 90px;
-    line-height: 100px;
+h2{
+    font-size: 70px;
+    line-height: 80px;
     color: #FFFFFF;
     text-transform: uppercase;
     font-family: "Bebas Neue", sans-serif;
     margin-bottom: 20px;
 }
 
-p {
-    font-size: 16px;
+.b1{
+    color: #CF2D3A;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.welcome p{
     color: #AFAFAF;
-    margin: 25px 0;
+    font-size: 18px;
+}
+
+/* SERVICES */
+
+.services{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.services-txt p{
+    color: #AFAFAF;
+}
+
+.services-txt hr{
+    width: 100px;
+    margin: 20px auto;
+    border: 1px solid #CF2D3A;
+}
+
+.services-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.services-1,
+.services-2,
+.services-3{
+    width: 30%;
+    transition: .3s;
+}
+
+.services-1:hover,
+.services-2:hover,
+.services-3:hover{
+    transform: translateY(-10px);
+}
+
+.services img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.services h3{
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.services p{
+    color: #AFAFAF;
+}
+
+/* PRECIOS */
+
+.prices{
+    display: flex;
+}
+
+.prices-1{
+    width: 50%;
+    padding: 150px 100px;
+    background-color: #191919;
+}
+
+.prices-1 p{
+    color: #AFAFAF;
+}
+
+.prices-2{
+    width: 50%;
+    background-image: url('images/bg2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table{
+    width: 100%;
+    margin-top: 40px;
+    color: #FFFFFF;
+}
+
+th{
+    text-align: left;
+}
+
+td{
+    text-align: right;
+}
+
+/* PERSONAL */
+
+.personal{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.personal p{
+    color: #AFAFAF;
+}
+
+.personal-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.personal-1,
+.personal-2,
+.personal-3{
+    width: 30%;
+}
+
+.personal img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.personal h3{
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+
+.footer-bg{
+    background-color: #191919;
+    padding: 100px 0;
+    text-align: center;
+}
+
+form{
+    width: 70%;
+    margin: auto;
+}
+
+.campo-1{
+    display: flex;
+    gap: 10px;
+}
+
+.campo{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+.footer-txt{
+    text-align: center;
+    background-color: #151515;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .menu{
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1F1F1F;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header-txt h1{
+        font-size: 60px;
+    }
+
+    .header-txt p{
+        padding: 0 20px;
+        font-size: 18px;
+    }
+
+    .header-dir,
+    .welcome,
+    .prices,
+    .services-group,
+    .personal-group{
+        flex-direction: column;
+    }
+
+    .welcome-1,
+    .welcome-2,
+    .prices-1,
+    .prices-2,
+    .services-1,
+    .services-2,
+    .services-3,
+    .personal-1,
+    .personal-2,
+    .personal-3{
+        width: 100%;
+    }
+
+    .welcome-2,
+    .prices-1{
+        padding: 50px 20px;
+    }
+
+    h2{
+        font-size: 45px;
+        line-height: 55px;
+    }
 }
