@@ -247,6 +247,8 @@ h2{
 
 .prices-1 p{
     color: #AFAFAF;
+    font-size: clamp(20px, 2vw, 30x);
+    line-height: 1.8;
 }
 
 .prices-2{
@@ -261,6 +263,7 @@ table{
     width: 100%;
     margin-top: 40px;
     color: #FFFFFF;
+    font-size: clamp(18px, 2vw, 30px);
 }
 
 th{
@@ -268,7 +271,8 @@ th{
 }
 
 td{
-    text-align: right;
+    text-align: left;
+    font-size: 32px;
 }
 
 /* PERSONAL */
